@@ -1,5 +1,4 @@
-// import { createLogger, format, transports } from "winston";
-
+// import winston from "winston";
 
 // export default winston.createLogger({
 //   level: "error",
@@ -13,5 +12,5 @@
 //       ({ timestamp, level, message }) => `${timestamp} [${level}] : ${message} `
 //     )
 //   ),
-  transports: [new winston.transports.Console()],
-});
+//   transports: [new winston.transports.Console()],
+// });
