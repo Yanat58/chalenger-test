@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.title{
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  list-style: none;
+
+}
+
+.item {  
+  position: relative;
+  height: 355px;
+  padding: 8px 8px 16px ;
+  border-radius: 20px;
+  background-color: #D9D9D9;
+}
+
+.img {
+  width: 272px;
+  height: 215px;
+  border-radius: 12px;
+  background-color: #414141;;
+}
+
+.box-text {
+  padding-block-start: 20px;
+}
+
+.heart_btn {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  background: transparent;
+  border: none;
+}

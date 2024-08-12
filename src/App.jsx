@@ -1,13 +1,23 @@
-// import React from 'react'
-import CardPage from "./pages/CardPage/CardPage";
-import Home from "./pages/Home/Home";
+
+import { Routes, Route } from 'react-router-dom';
+import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
+import LoginPage from "./pages/LoginPage";
+import SharedLayout from './components/SharedLayout';
+import RegisterPage from './pages/RegisterPage';
 
 export default function App() {
   return (
-    <>
-      <h1>App</h1>
-      <Home />
-      <CardPage />
-    </>
+   
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="register" element={<RegisterPage />} />
+        </Route>
+      </Routes>
+      
+   
   );
 }

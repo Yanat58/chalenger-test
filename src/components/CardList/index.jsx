@@ -1,11 +1,13 @@
 import { useState } from "react";
-import style from "./CardList.module.css";
+import style from "./styles.module.css";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 export default function CardList() {
   const [favorite, setFavorite] = useState(false);
   return (
-    <ul className={style.list}>
+     <section className={style.container}>
+      <h1 className={style.title}>VIP оголошення</h1>
+      <ul className={style.list}>
       <li className={style.item}>
         <div className={style.img}></div>
         <div className={style.box_text}>
@@ -66,7 +68,7 @@ export default function CardList() {
           type="button"
           onClick={() => setFavorite(!favorite)}
         >
-          {favorite ? <FaHeart /> : <FaRegHeart />}
+          {favorite ? <FaHeart  color="blue"/> : <FaRegHeart color="#fff"  />}
         </button>
         <div className={style.box_text}>
           <p className={style.text}>Лошадка коричневая</p>
@@ -74,5 +76,7 @@ export default function CardList() {
         </div>
       </li>
     </ul>
+    </section>
+   
   );
 }
