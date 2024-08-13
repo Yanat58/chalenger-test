@@ -20,14 +20,14 @@
   position: relative;
   height: 355px;
   padding: 8px 8px 16px ;
-  border-radius: 20px;
+  border-radius: 16px;
   background-color: #D9D9D9;
 }
 
 .img {
   width: 272px;
   height: 215px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: #414141;;
 }
 

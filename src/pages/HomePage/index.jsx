@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import CardList from "../../components/CardList";
+import AdvertList from "../../components/AdvertList";
 import Hero from "../../components/Hero";
 
 
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <CardList />
+      <AdvertList />
     </main>
   )
 }
