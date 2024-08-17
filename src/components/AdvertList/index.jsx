@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./styles.module.css";
+import styles from "./styles.module.css";
 import { advers } from "./advers";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import photoAlternate from '../../images/not-found.png'
@@ -10,25 +10,25 @@ export default function AdvertList() {
   console.log(advers)
 
   return (
-    <section className={style.container}>
-      <h2 className={style.title}>VIP оголошення</h2>
-      <ul className={style.list}>
+    <section className={styles.container}>
+      <h2 className={styles.title}>VIP оголошення</h2>
+      <ul className={styles.list}>
         {advers?.map((item, index) => (
-          <li className={style.item} key={index} >
-            <p className={style.category}>VIP-оголошення</p>
-            <img className={style.img} src={item.img ? item.img : photoAlternate} alt="" />
+          <li className={styles.item} key={index} >
+            <p className={styles.category}>VIP-оголошення</p>
+            <img className={styles.img} src={item.img ? item.img : photoAlternate} alt="" />
             <button
-              className={style.heart_btn}
+              className={styles.heart_btn}
               type="button"
               onClick={() => setFavorite(!favorite)}
             >
               {favorite ? <FaHeart color="blue" /> : <FaRegHeart color="#000" />}
             </button>
-            <div className={style.box_text}>
-              <p className={style.span}><span>Опубліковано: 12.07.2024</span></p>
-              <p className={style.text}>Українська традиційна вишиванка жіночка Львівська</p>
-              <p className={style.span}><span>Lara_Sylwer25</span></p>
-              <p className={style.price}>850 грн</p>
+            <div className={styles.box_text}>
+              <p className={styles.span}><span>Опубліковано: 12.07.2024</span></p>
+              <p className={styles.text}>Українська традиційна вишиванка жіночка Львівська</p>
+              <p className={styles.span}><span>Lara_Sylwer25</span></p>
+              <p className={styles.price}>850 грн</p>
             </div>
           </li>))}
       </ul>
