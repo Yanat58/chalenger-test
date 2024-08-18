@@ -25,9 +25,9 @@ export default function AdvertList() {
               onClick={() => setFavorite(!favorite)}
             >
               {favorite ? (
-                <FaHeart color="blue" />
+                <FaHeart color="blue" className={styles.icon} />
               ) : (
-                <FaRegHeart color="#000" />
+                <FaRegHeart color="#000" className={styles.icon} />
               )}
             </button>
             <div className={styles.box_text}>
